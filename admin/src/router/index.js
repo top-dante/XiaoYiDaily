@@ -14,6 +14,16 @@ Vue.use(VueRouter)
         path:'/',
         name:'home',
         component:()=>import('../views/Home')
+      },
+      {
+        path:'materials',
+        name:'materials',
+        component:()=>import('../views/materials/Index')
+      },
+      {
+        path:'setting',
+        name:'setting',
+        component:()=>import('../views/setting/Index')
       }
     ]
   }

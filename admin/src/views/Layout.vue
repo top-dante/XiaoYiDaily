@@ -1,9 +1,11 @@
 <template>
-    <a-layout :style="{height:'100%'}">
+    <a-layout :style="{minHeight:'100vh'}">
         <a-layout-header class="header">
             <div class="logo"></div>
-            <a-menu mode="horizontal" theme="dark" class="menu">
-                <a-menu-item v-for="(item,index) in menuList" :key="index">
+            <a-menu mode="horizontal"
+                    v-model="current"
+                    theme="dark" class="menu" @click="menuChange">
+                <a-menu-item v-for="item in menuList" :key="item.path">
                     <router-link :to="item.path">
                         {{item.name}}
                     </router-link>
@@ -41,6 +43,7 @@
         name: "Layout",
         data(){
             return {
+                current:['/'],
                 menuList:[
                     {name:'工作台',path:'/'},
                     {name:'素材库',path:'/materials'},
@@ -48,6 +51,18 @@
                     {name:'用户',path:'/member'},
                     {name:'设置',path:'/setting'}
                 ]
+            }
+        },
+        created(){
+            let menu_current = localStorage.getItem('menu_current')
+            if(menu_current){
+                this.current = [menu_current]
+            }
+        },
+        methods:{
+            menuChange(e){
+                this.current = [e.key]
+                localStorage.setItem('menu_current',e.key)
             }
         }
     }
@@ -89,7 +104,6 @@
     }
     .container {
         margin: 0 auto;
-        background-color: #2c3e50;
     }
 
 
