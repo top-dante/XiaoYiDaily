@@ -31,9 +31,7 @@
                 </div>
         </a-layout-header>
         <a-layout-content>
-            <div class="container">
-                <router-view/>
-            </div>
+            <router-view/>
         </a-layout-content>
     </a-layout>
 </template>
@@ -101,25 +99,5 @@
         cursor: pointer;
         color: #fff;
         transition: all .4s;
-    }
-    .container {
-        margin: 0 auto;
-    }
-
-
-    @media screen and ( max-width: 1920px ) {
-        .container{
-            width: 1440px;
-        }
-    }
-    @media screen and (max-width: 1600px){
-        .container{
-            width: 1280px;
-        }
-    }
-    @media screen and (max-width: 1366px) {
-        .container{
-            width: 1266px;
-        }
     }
 </style>

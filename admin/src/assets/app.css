@@ -1,0 +1,109 @@
+::-webkit-scrollbar {
+    width:6px;
+    height:6px;
+    padding-top:8px;
+    background-color:transparent;
+}
+::-webkit-scrollbar-thumb {
+    background-color:rgba(0,0,0,.35);
+}
+.ant-btn-sm {
+    font-size:12px !important;
+    border-radius:2px !important;
+}
+.ant-btn > .anticon + span,.ant-btn > span + .anticon {
+    margin-left:4px;
+}
+.actions .ant-btn+.ant-btn {
+    margin-left:8px;
+}
+.ant-tag {
+    border-radius:2px !important;
+}
+/*custom style*/
+.padding-0{padding:0!important;}
+.padding{padding: 24px;}
+.padding-md{padding: 16px;}
+.padding-sm{padding: 12px;}
+.padding-x{padding: 0 24px;}
+.mt-large{margin-top: 32px !important;}
+.mt{margin-top:24px}
+.mt-sm{margin-top:12px}
+.mt-xs{margin-top:6px}
+.mb{margin-bottom:24px}
+.mb-sm{margin-bottom:12px}
+.mb-xs{margin-bottom:6px}
+.mr{margin-right:24px;}
+.mr-md{margin-right:16px;}
+.mr-sm{margin-right:12px;}
+.mr-xs{margin-right:6px;}
+.ml{margin-left:24px;}
+.ml-sm{margin-left:12px;}
+.ml-xs{margin-left:6px;}
+.pb-sm{padding-bottom: 12px !important;}
+.pl-sm{padding-left: 12px !important;}
+.text-price:before{content:"￥";}
+.text-center{text-align:center}
+.text-right{text-align:right}
+.text-lg{font-size: 16px !important;}
+.text-sm{font-size: 12px !important;}
+.border-circle{border-radius: 1000px !important;}
+.border-none{border:none !important;}
+.border-none:hover,
+.border-none:focus{
+    border: none !important;
+    box-shadow: none !important;
+}.border-bottom{border-bottom: 1px solid #e8e8e8}
+ .float-right{
+     float: right;
+ }
+ .float-right:after,
+ .float-right:before{
+     clear: both;
+     content: "";
+     float: none;
+     display: table;
+ }
+.container {
+    margin: 0 auto;
+}
+
+
+@media screen and ( max-width: 1920px ) {
+    .container{
+        width: 1440px;
+    }
+}
+@media screen and (max-width: 1600px){
+    .container{
+        width: 1280px;
+    }
+}
+@media screen and (max-width: 1366px) {
+    .container{
+        width: 1266px;
+    }
+}
+ .wrapper{
+     padding: 32px 0;
+ }
+ .page-header {
+     background-color: #fff;
+     padding: 16px 0;
+     margin-bottom: 24px;
+ }
+ .page-header>.container{
+     display:flex;
+ }
+ .page-heading,.page-header-extra{
+     flex: 1;
+ }
+.page-header-extra{
+    text-align: right;
+}
+.page-header-title{
+    color: rgba(0,0,0,.85);
+    font-weight: 600;
+    font-size: 20px;
+    margin-right: 12px;
+}

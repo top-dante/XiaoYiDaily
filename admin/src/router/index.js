@@ -21,6 +21,11 @@ Vue.use(VueRouter)
         component:()=>import('../views/materials/Index')
       },
       {
+        path:'brand',
+        name:'brand',
+        component:()=>import('../views/brand/Index')
+      },
+      {
         path:'setting',
         name:'setting',
         component:()=>import('../views/setting/Index')
